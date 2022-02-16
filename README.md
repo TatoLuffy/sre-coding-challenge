@@ -12,8 +12,9 @@ Pre-Requirements:
         - AmazonVPCFullAccess
         - AmazonSNSFullAccess
     3- Configure locally access key and secret key to access aws with user terraform. 
-        In windows 
-    4- Install terraform binary inside folder bin of your user. (Windows) Download here: https://www.terraform.io/downloads. And add to variable System PATH.
+        Default region: us-east-1
+        In windows: Modify file credentials inside %USER%/.aws/credentials
+    4- Install terraform v.1.1.5 in your folder user inside a bin folder. (Windows) Download here: https://www.terraform.io/downloads. And add to variable System PATH.
 
 
     
