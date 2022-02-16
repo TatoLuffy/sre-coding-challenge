@@ -6,5 +6,4 @@ provider "aws" {
 
 resource "aws_s3_bucket" "tf_s3" {
     bucket = "tf-dbl-20220216"
-    acl    = "private"
 }
