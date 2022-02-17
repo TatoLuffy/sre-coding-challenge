@@ -22,6 +22,9 @@ How-To:
         - "terraform plan" 
         - "terraform apply" (prompt and answer yes) 
     Task 3. Execute test
-        - go /test/s3.go -v -timeout 30m
+        - sre-coding-challenge\test> go mod init src/task1
+        - sre-coding-challenge\test> go get github.com/gruntwork-io/terratest/modules/aws 
+        - go get github.com/gruntwork-io/terratest/modules/opa@v0.40.2
+        - go /test/s3_test.go -v -timeout 30m
 
     
