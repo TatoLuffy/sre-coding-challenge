@@ -10,15 +10,18 @@
 # REQUIRED PARAMETERS
 # You must provide a value for each of these parameters.
 # ---------------------------------------------------------------------------------------------------------------------
-variable "region" {
-  description = "The AWS region to deploy to"
-  type        = string
-}
+
 
 # ---------------------------------------------------------------------------------------------------------------------
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------
+
+variable "region" {
+  description = "The AWS region to deploy to"
+  type        = string
+  default     = "us-east-1"
+}
 
 variable "with_policy" {
   description = "If set to `true`, the bucket will be created with a bucket policy."
