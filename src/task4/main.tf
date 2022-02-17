@@ -19,7 +19,7 @@ provider "aws" {
 
 resource "aws_vpc" "vpc_main" {
   cidr_block = var.main_vpc_cidr
-
+  
   tags = {
     Name = var.tag_name
   }
@@ -46,7 +46,6 @@ resource "aws_security_group" "allow_webserver" {
     to_port          = 8085
     protocol         = "tcp"
     cidr_blocks      = [aws_vpc.vpc_main.cidr_block]
-    ipv6_cidr_blocks = [aws_vpc.vpc_main.ipv6_cidr_block]
   }
 
   egress {
