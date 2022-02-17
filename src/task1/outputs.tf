@@ -1,9 +1,9 @@
 output "bucket_id" {
-  value = aws_s3_bucket.tf_s3.id
+  value = aws_s3_bucket.bucket_main.id
 }
 
 output "bucket_arn" {
-  value = aws_s3_bucket.tf_s3.arn
+  value = aws_s3_bucket.bucket_main.arn
 }
 
 /*
