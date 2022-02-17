@@ -35,6 +35,33 @@ resource "aws_internet_gateway" "gateway_main" {
   }
 }
 
+resource "aws_security_group" "allow_webserver" {
+  name        = "allow_webserver"
+  description = "Allow Default http inbound traffic"
+  vpc_id      = aws_vpc.vpc_main.id
+
+  ingress {
+    description      = "Webserver from VPC"
+    from_port        = 8085
+    to_port          = 8085
+    protocol         = "tcp"
+    cidr_blocks      = [aws_vpc.vpc_main.cidr_block]
+    ipv6_cidr_blocks = [aws_vpc.vpc_main.ipv6_cidr_block]
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  tags = {
+    Name = var.tag_name
+  }
+}
+
 resource "aws_eip" "nat" {
   vpc = true
 }
