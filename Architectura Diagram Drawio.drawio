@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-17T21:23:08.937Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36" etag="R4eIoXgsAlGWVKJMAaCd" version="16.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-17T21:27:54.998Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36" etag="deuZtrBX3IqlOyuCaOZo" version="16.6.0" type="github">
   <diagram id="pFCO5rwux-H22-heMVk4" name="Page-1">
     <mxGraphModel dx="2062" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -63,7 +63,7 @@
         <mxCell id="YYBxXYRRNS971-Oj3B5X-18" value="Public IP Address" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Public_IP_Addresses.svg;labelBackgroundColor=#FFFFFF;fontColor=#000000;fillColor=default;gradientColor=none;" vertex="1" parent="YYBxXYRRNS971-Oj3B5X-2">
           <mxGeometry x="107.5" y="39" width="65" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="YYBxXYRRNS971-Oj3B5X-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="YYBxXYRRNS971-Oj3B5X-10" target="VTVd_iiEjQSxIu9ezFgo-2">
+        <mxCell id="YYBxXYRRNS971-Oj3B5X-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.855;entryY=0.855;entryDx=0;entryDy=0;fontSize=13;fontColor=#000000;entryPerimeter=0;" edge="1" parent="1" source="YYBxXYRRNS971-Oj3B5X-10" target="VTVd_iiEjQSxIu9ezFgo-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YYBxXYRRNS971-Oj3B5X-10" value="Route Table 91.189.0.0/24" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.route_table;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
