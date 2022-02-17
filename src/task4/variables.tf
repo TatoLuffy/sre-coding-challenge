@@ -33,4 +33,8 @@ variable "tag_name" {
   default     = "terraform-interview-sre"
 }
 
-
+variable "ami_ec2" {
+    description = "Ami default Suse with apache"
+    type        = string
+    default     = "ami-08895422b5f3aa64a" # SUSE Linux Enterprise Server 15 SP3 (HVM), SSD Volume Type
+}
