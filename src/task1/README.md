@@ -19,12 +19,15 @@ Pre-Requirements:
 
 How-To:
     Task 1-2. Execute:
+        - "terraform init"
         - "terraform plan" 
         - "terraform apply" (prompt and answer yes) 
     Task 3. Execute test
         - sre-coding-challenge\test> go mod init src/task1
-        - sre-coding-challenge\test> go get github.com/gruntwork-io/terratest/modules/aws 
-        - go get github.com/gruntwork-io/terratest/modules/opa@v0.40.2
+        - sre-coding-challenge\test> go get github.com/gruntwork-io/terratest/modules/aws
+        - sre-coding-challenge\test> go get github.com/gruntwork-io/terratest/modules/opa@v0.40.2
+        - sre-coding-challenge\test> go get github.com/gruntwork-io/terratest/modules/terraform@v0.40.2
         - go /test/s3_test.go -v -timeout 30m
+        
 
     
