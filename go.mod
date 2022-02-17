@@ -1,4 +1,4 @@
-module src/task1
+module src/task123
 
 go 1.17
 
