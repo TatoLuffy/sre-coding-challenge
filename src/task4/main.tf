@@ -72,7 +72,7 @@ resource "aws_nat_gateway" "nat" {
   depends_on    = [aws_internet_gateway.gateway_main]
 }
 
-## PUBLIC SUBNET AND ROUTE TABLE##
+## PUBLIC SUBNET ##
 
 resource "aws_subnet" "public" {
   vpc_id                  = aws_vpc.vpc_main.id
@@ -84,6 +84,21 @@ resource "aws_subnet" "public" {
   }
 
   availability_zone = data.aws_availability_zones.available.names[0]
+}
+
+## Route table for the public network ##
+
+resource "aws_route_table" "public" {
+  vpc_id = aws_vpc.vpc_main.id
+
+  route {
+    cidr_block = "91.189.0.0/24"
+    gateway_id = aws_internet_gateway.gateway_main.id
+  }
+
+  tags = {
+    Name = var.tag_name
+  }
 }
 
 resource "aws_route_table_association" "public" {
