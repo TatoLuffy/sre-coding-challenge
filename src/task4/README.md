@@ -1,5 +1,5 @@
 
-This application is to solve requirements of Task 4:
+This application solve requirements of Task 4:
 
 4) Create the following through Terraform:
     1. VPC, IGW, Route Table, subnet & security group
@@ -13,4 +13,3 @@ Commands to execute infraestructure of code:
     terraform apply
 
 
-    
