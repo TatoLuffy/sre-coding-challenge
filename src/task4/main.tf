@@ -141,7 +141,7 @@ resource "aws_route_table_association" "private" {
 
 resource "aws_network_interface" "interfaceEc2" {
   subnet_id   = aws_subnet.private.id
-  private_ips = ["172.16.10.100"]
+  private_ips = ["10.0.1.15"]
 
   tags = {
     Name = var.tag_name
@@ -157,7 +157,4 @@ resource "aws_instance" "ec2" {
     device_index         = 0
   }
 
-  credit_specification {
-    cpu_credits = "unlimited"
-  }
 }
