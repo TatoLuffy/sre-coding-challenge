@@ -38,3 +38,9 @@ variable "ami_ec2" {
     type        = string
     default     = "ami-08895422b5f3aa64a" # SUSE Linux Enterprise Server 15 SP3 (HVM), SSD Volume Type
 }
+
+variable "ami_ec2_type"{
+    description = "Ami type"
+    type        = string
+    default     = "t2.micro" 
+}

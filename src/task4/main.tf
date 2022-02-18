@@ -136,3 +136,28 @@ resource "aws_route_table_association" "private" {
   subnet_id      = aws_subnet.private.id
   route_table_id = aws_route_table.private.id
 }
+
+# Create a EC2 with a AMI based suse with apache preinstalled
+
+resource "aws_network_interface" "interfaceEc2" {
+  subnet_id   = aws_subnet.private.id
+  private_ips = ["172.16.10.100"]
+
+  tags = {
+    Name = var.tag_name
+  }
+}
+
+resource "aws_instance" "ec2" {
+  ami           = var.ami_ec2 # us-east-1
+  instance_type = var.ami_ec2_type
+
+  network_interface {
+    network_interface_id = aws_network_interface.interfaceEc2.id
+    device_index         = 0
+  }
+
+  credit_specification {
+    cpu_credits = "unlimited"
+  }
+}
